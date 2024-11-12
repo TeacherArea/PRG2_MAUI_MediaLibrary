@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PRG2_MAUI_MediaLibrary.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Mediebiblioteket" FontSize="20" HorizontalOptions="Center" Margin="20"/>
+            <Label Text="Innehåll" FontAttributes="Bold" />
+            <ListView Margin="0,0,0,20" ItemsSource="{Binding MediaItems}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding DisplayText}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label Text="Lägg till en bok" FontAttributes="Bold" />
+            <Entry x:Name="bookTitleEntry" Placeholder="Titel" />
+            <Entry x:Name="bookGenreEntry" Placeholder="Genre" />
+            <Entry x:Name="bookReleaseYearEntry" Placeholder="Publiceringsår" Keyboard="Numeric" />
+            <Entry x:Name="bookAuthorEntry" Placeholder="Författare" />
+            <Entry x:Name="bookPagesEntry" Placeholder="Antal sidor" Keyboard="Numeric" />
+            <Button Text="Spara bok" Clicked="OnSaveBookClicked" Margin="0,0,0,30"/>
+
+            <Label Text="Lägg till ett spel" FontAttributes="Bold" />
+            <Entry x:Name="gameTitleEntry" Placeholder="Titel" />
+            <Entry x:Name="gameGenreEntry" Placeholder="Genre" />
+            <Entry x:Name="gameReleaseYearEntry" Placeholder="Lanseringsår" Keyboard="Numeric" />
+            <Entry x:Name="gameManufacturerEntry" Placeholder="Studio" />
+            <Entry x:Name="gameLanguageEntry" Placeholder="Språk" />
+            <Entry x:Name="gamePlatformsEntry" Placeholder="Platform/er" />
+            <Button Text="Spara spel" Clicked="OnSaveGameClicked" />
+
+            <Label Text="Lägg till en film" FontAttributes="Bold" />
+            <Entry x:Name="movieTitleEntry" Placeholder="Titel" />
+            <Entry x:Name="movieGenreEntry" Placeholder="Genre" />
+            <Entry x:Name="movieReleaseYearEntry" Placeholder="Lanseringsår" Keyboard="Numeric" />
+            <Entry x:Name="movieManufacturerEntry" Placeholder="Studio" />
+            <Entry x:Name="movieLanguageEntry" Placeholder="Språk" />
+            <Entry x:Name="movieResolutionEntry" Placeholder="Resolution" />
+            <Entry x:Name="movieFormatEntry" Placeholder="Format" />
+            <Button Text="Spara film" Clicked="OnSaveMovieClicked" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

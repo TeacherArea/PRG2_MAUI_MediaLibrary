@@ -11,28 +11,34 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PRG2_MAUI_MediaLibrary.Views">
-    <Position X="7.75" Y="3" Width="1.5" />
+    <Position X="7" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAIAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Views.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PRG2_MAUI_MediaLibrary.Movies">
-    <Position X="6.5" Y="5.75" Width="1.5" />
+    <Position X="6" Y="6.75" Width="1.5" />
+    <Members>
+      <Method Name="Movies" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAAACCAAAABAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Movies.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PRG2_MAUI_MediaLibrary.Games">
-    <Position X="9.25" Y="5.75" Width="1.5" />
+    <Position X="8" Y="6.75" Width="1.5" />
+    <Members>
+      <Method Name="Games" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Model\Games.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PRG2_MAUI_MediaLibrary.Books">
-    <Position X="3.5" Y="4" Width="1.5" />
+    <Position X="3.5" Y="4.25" Width="1.5" />
     <Members>
       <Method Name="Books" Hidden="true" />
     </Members>
@@ -42,9 +48,12 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PRG2_MAUI_MediaLibrary.Model.MediaService">
-    <Position X="11.5" Y="1" Width="1.5" />
+    <Position X="8" Y="0.5" Width="1.75" />
+    <Members>
+      <Method Name="MediaService" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <HashCode>AAAEABAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>Model\MediaService.cs</FileName>
     </TypeIdentifier>
   </Class>

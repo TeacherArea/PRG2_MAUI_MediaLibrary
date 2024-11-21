@@ -33,7 +33,7 @@ För att kunna köra detta projekt behöver du:
 - En IDE som Visual Studio 2022 med MAUI-stöd.
 - Grundläggande kunskaper i objektorienterad programmering och MAUI.
 
-## Funktioner i Master-branch
+## Några av funktionerna i master-branchen
 
 I huvudbranchen (`master`) har applikationen följande funktionalitet:
 
@@ -49,11 +49,13 @@ I huvudbranchen (`master`) har applikationen följande funktionalitet:
 
 ### Begränsningar:
 
+Du behöver själv lägga till funktioner i respektive klasser, vyer och code-behind för Games och Movies för att uppdatera listan, som är en ObservableCollection av Media.
+
 Applikationen följer inte MVVM-arkitekturen i nuläget. Istället visas data direkt i användargränssnittet med hjälp av publika egenskaper i `Media`-klassen och dess subklasser, snarare än att använda metodik som exempelvis `GetMedia()`. Detta innebär att logiken för visning är mindre strukturerad och tät kopplad till modellen, vilket kan verka ologiskt.
 
 ---
 
-## Planerade Förbättringar i Branchen `rearrange-to-mvvm`
+## Planerade förbättringar i branchen `rearrange-to-mvvm`
 
 I branchen `rearrange-to-mvvm` kommer projektet att omstruktureras för att följa MVVM-arkitekturen (Model-View-ViewModel):
 
@@ -67,10 +69,3 @@ I branchen `rearrange-to-mvvm` kommer projektet att omstruktureras för att föl
    - Istället för att använda publika egenskaper i `Media`-klassen för att visa data i UI, kommer ViewModel-klasser att hantera dessa operationer och exponerar data på ett mer strukturerat sätt för användargränssnittet.
 
 ---
-
-## Installation och Körning
-
-1. Klona detta repo till din lokala maskin:
-
-   ```bash
-   git clone <URL till ditt repo>

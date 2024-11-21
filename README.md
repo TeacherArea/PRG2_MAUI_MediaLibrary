@@ -15,7 +15,7 @@ Det här projektet är en del av en elevövning där syftet är att skapa en app
 
 Projektets klassdiagram (se bild nedan) visar hur abstrakta klasser, arv och polymorfism används för att representera olika typer av media (böcker, filmer och spel). Alla klasser delar en gemensam abstrakt bas (`Media`) och implementerar sina egna unika egenskaper och metoder.
 
-![Klassdiagram](ClassDiagram.png)
+![Klassdiagram](PRG2_MAUI_MediaLibrary/Resources/Images/ClassDiagram.png)
 
 ### Arkitektur
 

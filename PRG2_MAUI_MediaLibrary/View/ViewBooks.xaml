@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PRG2_MAUI_MediaLibrary.View.ViewBooks">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="6">
+            <Label Text="Boklistan" FontSize="20" HorizontalOptions="Center" Margin="20"/>
+            <Label Text="Innehåll" FontAttributes="Bold" />
+            <CollectionView Margin="0,0,0,20" ItemsSource="{Binding BooksOnly}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10" ColumnDefinitions="2*,2*,1*">
+                            <Label Text="{Binding DisplayText}" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" />
+                         </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Label Text="Lägg till en bok" FontAttributes="Bold" Margin="0,30,0,0"/>
+            <Entry x:Name="bookTitleEntry" Placeholder="Titel" />
+            <Entry x:Name="bookGenreEntry" Placeholder="Genre" />
+            <Entry x:Name="bookReleaseYearEntry" Placeholder="Publiceringsår" Keyboard="Numeric" />
+            <Entry x:Name="bookAuthorEntry" Placeholder="Författare" />
+            <Entry x:Name="bookPagesEntry" Placeholder="Antal sidor" Keyboard="Numeric" />
+            <Button Text="Spara bok" Clicked="OnSaveBookClicked" Margin="0,20,0,30"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

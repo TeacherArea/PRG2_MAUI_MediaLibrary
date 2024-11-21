@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PRG2_MAUI_MediaLibrary.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PRG2_MAUI_MediaLibrary.View"
+    Shell.FlyoutBehavior="Flyout"
+    Title="PRG2_MAUI_MediaLibrary">
+
+    <TabBar>
+        <ShellContent Title="Start" Icon="home.png" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Title="Böcker" Icon="book.png" ContentTemplate="{DataTemplate local:ViewBooks}" />
+        <ShellContent Title="Spel" Icon="game.png" ContentTemplate="{DataTemplate local:ViewGames}" />
+        <ShellContent Title="Filmer" Icon="movie.png" ContentTemplate="{DataTemplate local:ViewMovies}" />
+    </TabBar>
+
+</Shell>

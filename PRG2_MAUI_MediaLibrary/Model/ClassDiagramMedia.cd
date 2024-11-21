@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PRG2_MAUI_MediaLibrary.Media">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Media" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAQAAAAEAAAAMAAAADAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Media.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PRG2_MAUI_MediaLibrary.Views">
+    <Position X="7.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Views.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PRG2_MAUI_MediaLibrary.Movies">
+    <Position X="6.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAACCAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Movies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PRG2_MAUI_MediaLibrary.Games">
+    <Position X="9.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Model\Games.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PRG2_MAUI_MediaLibrary.Books">
+    <Position X="3.5" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Books" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACAAAAAAAAAAAIAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Books.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PRG2_MAUI_MediaLibrary.Model.MediaService">
+    <Position X="11.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Model\MediaService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

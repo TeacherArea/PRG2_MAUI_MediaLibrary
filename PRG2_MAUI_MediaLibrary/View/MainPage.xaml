@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PRG2_MAUI_MediaLibrary.View.MainPage"
+             Title="Mediebiblioteket">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Välkommen till Mediebiblioteket" Margin="0,30,0,20" FontSize="20" HorizontalOptions="Center" />
+            <Label Text="Innehåll i hela biblioteket" FontAttributes="Italic" Margin="0,20,0,10"/>
+            <CollectionView ItemsSource="{Binding MediaItems}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="15" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.Header>
+                    <Grid ColumnDefinitions="2*,1*,1*">
+                        <Label Grid.Column="0" Text="Titel" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="Genre" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" />
+                        <Label Grid.Column="2" Text="År" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="End" />
+                    </Grid>
+                </CollectionView.Header>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="2*,1*,1*" Padding="0">
+                            <Label Grid.Column="0" Text="{Binding Title}" VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="{Binding Genre}" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="{Binding ReleaseYear}" VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
+

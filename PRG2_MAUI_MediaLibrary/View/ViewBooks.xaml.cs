@@ -6,9 +6,14 @@ namespace PRG2_MAUI_MediaLibrary.View
 {
     public partial class ViewBooks : ContentPage, INotifyPropertyChanged
     {
+        // MediaService.Instance.MediaItems behövs egentligen inte. Det är en istans till listan för att förkorta koden,
+        // t ex vid MediaItems.Add(book), som annars skulle bli MediaService.Instance.MediaItems.Add(book)
         public ObservableCollection<Media> MediaItems => MediaService.Instance.MediaItems;
 
+        // här lagras listan lokalt med enbart böcker
         private IEnumerable<Books> _booksOnly;
+
+        // privat egenskap. En IEnumerable är en lista
         public IEnumerable<Books> BooksOnly
         {
             get => _booksOnly;
@@ -24,7 +29,16 @@ namespace PRG2_MAUI_MediaLibrary.View
             InitializeComponent();
             MediaItems.CollectionChanged += OnMediaItemsChanged;
             BindingContext = this;
-            BooksOnly = MediaItems.OfType<Books>().ToList();
+                BooksOnly = MediaItems.OfType<Books>().ToList(); // själva filtrering av böcker.
+                                                                 // OfType<Books>() är en LINQ-metod. Skulle kunna vara en if-sats om man vill det,
+                                                                 // ex
+                                                                 // foreach (var item in mediaList)
+                                                                 // {
+                                                                 //    if (item is Books book)
+                                                                 //    {
+                                                                 //        Console.WriteLine($"Detta är en bok: {book.Title}");
+                                                                 //    }
+                                                                 // }
         }
 
         private void OnMediaItemsChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)

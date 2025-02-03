@@ -1,6 +1,6 @@
-# PRG2 MAUI Media Library
+# Media Library
 
-Det här projektet är en del av en elevövning där syftet är att skapa en applikation med hjälp av MAUI och grundläggande principer i objektorienterad programmering (OOP). Fokus ligger på att implementera arv, polymorfism och singleton-mönster samtidigt som logik separeras från UI.
+Det här projektet är en del av en elevövning i gymniseämnet Programmering 2, där syftet är att skapa en applikation med hjälp av MAUI och grundläggande principer i objektorienterad programmering (OOP). Fokus ligger på att implementera arv, polymorfism och singleton-mönster samtidigt som logik separeras från UI.
 
 ## Syfte
 

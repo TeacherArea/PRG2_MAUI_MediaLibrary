@@ -23,14 +23,13 @@ Projektet är uppdelat i följande delar:
 
 - **Model**: Innehåller affärslogiken och representationen av data (t.ex. `Books.cs`, `Movies.cs` och `Games.cs`).
 - **View**: Innehåller användargränssnittet med MAUI-sidor (t.ex. `ViewBooks.xaml`, `ViewGames.xaml`).
-- **Service**: Hanterar logiken för datahantering (t.ex. `MediaService.cs`).
+- **ViewModel**: Hanterar logiken för datahantering (t.ex. `MediaService.cs`).
 
 ## Förutsättningar
 
 För att kunna köra detta projekt behöver du:
 
-- .NET 7.0 eller senare installerat på din dator.
-- En IDE som Visual Studio 2022 med MAUI-stöd.
+- En IDE som Visual Studio med MAUI-stöd.
 - Grundläggande kunskaper i objektorienterad programmering och MAUI.
 
 ## Några av funktionerna i master-branchen
@@ -49,23 +48,6 @@ I huvudbranchen (`master`) har applikationen följande funktionalitet:
 
 ### Begränsningar:
 
-Du behöver själv lägga till funktioner i respektive klasser, vyer och code-behind för Games och Movies för att uppdatera listan, som är en ObservableCollection av Media.
-
-Applikationen följer inte MVVM-arkitekturen i nuläget. Istället visas data direkt i användargränssnittet med hjälp av publika egenskaper i `Media`-klassen och dess subklasser, snarare än att använda metodik som exempelvis `GetMedia()`. Detta innebär att logiken för visning är mindre strukturerad och tät kopplad till modellen, vilket kan verka ologiskt.
-
----
-
-## Planerade förbättringar i branchen `rearrange-to-mvvm`
-
-I branchen `rearrange-to-mvvm` kommer projektet att omstruktureras för att följa MVVM-arkitekturen (Model-View-ViewModel):
-
-1. **Lägga till en ny mapp: `ViewModel`**  
-   - Den här mappen kommer att innehålla ViewModel-klasser som hanterar visning av data i användargränssnittet och bryter kopplingen mellan View och Model.
-
-2. **Ersätta `MediaService`**  
-   - Funktionaliteten i `MediaService` kommer att flyttas till ViewModel-klasserna för att bättre följa MVVM-mönstret.
-
-3. **Separera logik och visning**  
-   - Istället för att använda publika egenskaper i `Media`-klassen för att visa data i UI, kommer ViewModel-klasser att hantera dessa operationer och exponerar data på ett mer strukturerat sätt för användargränssnittet.
+Du behöver själv lägga till funktioner i respektive klasser, vyer och code-behind för Games och Movies för att uppdatera listan, som är en ObservableCollection av Media. MediaService använder Singleton. Det är lärorikt, men inte nödvändigt, att utveckla UI, funktioner och även lägga till fler klasser.
 
 ---

@@ -1,6 +1,6 @@
 ﻿namespace PRG2_MAUI_MediaLibrary
 {
-    public class Games : Views
+    public class Games : ViewableMedia
     {
         private string platforms;
         public override string DisplayText => GetMedia();

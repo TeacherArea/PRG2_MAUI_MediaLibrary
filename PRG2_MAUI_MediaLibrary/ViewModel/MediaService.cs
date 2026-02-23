@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace PRG2_MAUI_MediaLibrary.Model
+namespace PRG2_MAUI_MediaLibrary.ViewModel
 {
     class MediaService
     {

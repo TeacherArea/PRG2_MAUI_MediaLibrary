@@ -1,4 +1,4 @@
-using PRG2_MAUI_MediaLibrary.Model;
+using PRG2_MAUI_MediaLibrary.ViewModel;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 

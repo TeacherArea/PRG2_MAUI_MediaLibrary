@@ -1,5 +1,5 @@
 ﻿using System.Collections.ObjectModel;
-using PRG2_MAUI_MediaLibrary.Model;
+using PRG2_MAUI_MediaLibrary.ViewModel;
 
 namespace PRG2_MAUI_MediaLibrary.View
 {

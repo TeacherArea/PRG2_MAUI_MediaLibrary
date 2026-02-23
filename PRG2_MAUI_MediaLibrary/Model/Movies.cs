@@ -1,6 +1,6 @@
 ﻿namespace PRG2_MAUI_MediaLibrary
 {
-    public class Movies : Views
+    public class Movies : ViewableMedia
     {
         private string resolution;
         private string format;
